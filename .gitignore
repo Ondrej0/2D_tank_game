@@ -1,5 +1,13 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
+# Unity project is inside /2d_tank_game
+2d_tank_game/[Ll]ibrary/
+2d_tank_game/[Tt]emp/
+2d_tank_game/[Oo]bj/
+2d_tank_game/[Bb]uild/
+2d_tank_game/[Bb]uilds/
+2d_tank_game/[Ll]ogs/
+2d_tank_game/UserSettings/
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 .utmp/
