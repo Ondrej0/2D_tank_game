@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 5754987}
   - component: {fileID: 5754986}
   - component: {fileID: 5754985}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: unbreakable_tile_map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41845,7 +41845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TankShoot
   muzzle: {fileID: 2052078407}
-  bulletPrefab: {fileID: 6934755456112493574, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
+  bulletPrefab: {fileID: 6469539464393772019, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
   fireRate: 6
 --- !u!1 &1544664959
 GameObject:
@@ -49732,7 +49732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6065999455018987375, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6065999455018987375, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
       propertyPath: m_LocalRotation.w
@@ -49761,6 +49761,22 @@ PrefabInstance:
     - target: {fileID: 6065999455018987375, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469539464393772019, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
+      propertyPath: skin
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469539464393772019, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469539464393772019, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
+      propertyPath: maxStepDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7288729716010727959, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8990208778594610585, guid: 606ae193acfc28a42aa55271c48cd240, type: 3}
       propertyPath: m_Name

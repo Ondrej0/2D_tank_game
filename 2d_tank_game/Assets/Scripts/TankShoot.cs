@@ -2,22 +2,16 @@ using UnityEngine;
 
 public class TankShoot : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] private Transform muzzle;     // drag Muzzle (or Turret if you don't want Muzzle)
-    [SerializeField] private Bullet2D bulletPrefab;
-
-    [Header("Shooting")]
-    [SerializeField] private float fireRate = 6f; // bullets per second
+    [SerializeField] private Transform muzzle;
+    [SerializeField] private BulletDeterministic2D bulletPrefab;
+    [SerializeField] private float fireRate = 6f;
 
     private float nextFireTime;
 
     private void Update()
     {
-        // Left click
         if (Input.GetMouseButton(0))
-        {
             TryFire();
-        }
     }
 
     private void TryFire()
@@ -27,9 +21,7 @@ public class TankShoot : MonoBehaviour
 
         nextFireTime = Time.time + (1f / fireRate);
 
-        Bullet2D bullet = Instantiate(bulletPrefab, muzzle.position, muzzle.rotation);
-
-        // Your turret faces UP, so forward direction is muzzle.up
-        bullet.Fire(muzzle.up);
+        var bullet = Instantiate(bulletPrefab, muzzle.position, muzzle.rotation);
+        bullet.Fire(muzzle.up); // since your turret art faces UP
     }
 }
